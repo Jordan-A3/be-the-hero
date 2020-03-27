@@ -32,7 +32,7 @@ export default function Register(){
         try {
             const response = await api.post('ongs', data)
 
-            alert(`Seu ID de acesso: ${response.data}`)
+            alert(`Seu ID de acesso: ${response.data.id}, anote ele em um lugar seguro!`)
 
             history.push('/')
         } catch (err) {
